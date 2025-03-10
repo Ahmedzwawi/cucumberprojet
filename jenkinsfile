@@ -27,14 +27,6 @@ pipeline {
                 sh 'mvn allure:report'
             }
         }
-
-        stage('Serve Allure Report') {
-            steps {
-                sh 'allure generate target/allure-results -o target/allure-report'
-                sh 'allure open target/allure-report'
-            }
-        }
-
  
          stage('Publish Allure Report') {
              steps {
