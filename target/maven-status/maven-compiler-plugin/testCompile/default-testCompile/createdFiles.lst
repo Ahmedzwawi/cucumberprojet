@@ -3,3 +3,4 @@ com\logwire\pages\LoginPage.class
 com\logwire\hooks\Hooks.class
 com\logwire\RunCucumberTest.class
 com\logwire\steps\LoginSteps.class
+com\logwire\steps\CartPage.class
