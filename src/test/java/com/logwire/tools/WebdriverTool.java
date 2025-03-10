@@ -17,7 +17,7 @@ public class WebdriverTool {
         options.setCapability("se:screenResolution", "1920x1080");
 
         try {
-            driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+            driver = new RemoteWebDriver(new URL("http://192.168.1.55:4444"), options);
         } catch (MalformedURLException e) {
             throw new RuntimeException("Problème avec l'URL du Selenium Grid", e);
         }
